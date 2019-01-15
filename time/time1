@@ -21,7 +21,7 @@ def main():
     startPerfCounter=time.perf_counter()#记时
     otherLoop1()
     otherLoop1PerfCounter=time.perf_counter()
-    otherLoop1Perf=otherLoop1PerfCounter - otherLoop1PerfCounter
+    otherLoop1Perf=otherLoop1PerfCounter - startPerfCounter
     coreLoop()
     coreLooPerfCounter=time.perf_counter()
     coreLoopPerf=coreLooPerfCounter - otherLoop1PerfCounter
